@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Jayasri<span>.</span></h2>
+            <a href="#gallery">Gallery</a>
+        </nav>
+
+        <div class="hero">
+            <p>CODEALPHA • TASK 1</p>
+            <h1>My Image Gallery</h1>
+            <p>
+                Explore beautiful images with category filters,
+                smooth effects and a full-screen preview.
+            </p>
+        </div>
+    </header>
+
+
+    <main id="gallery">
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-filter="travel">
+                Travel
+            </button>
+
+            <button class="filter-btn" data-filter="city">
+                City
+            </button>
+        </div>
+
+
+        <section class="gallery">
+
+            <!-- Image 1 -->
+            <div class="gallery-item" data-category="nature">
+
+                <button class="image-card" data-index="0">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+                        alt="Mountain landscape">
+
+                    <div class="caption">
+                        <h3>Mountain Escape</h3>
+                        <p>Nature</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- Image 2 -->
+            <div class="gallery-item" data-category="travel">
+
+                <button class="image-card" data-index="1">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Beautiful beach">
+
+                    <div class="caption">
+                        <h3>Ocean Breeze</h3>
+                        <p>Travel</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- Image 3 -->
+            <div class="gallery-item" data-category="city">
+
+                <button class="image-card" data-index="2">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=85"
+                        alt="City skyline">
+
+                    <div class="caption">
+                        <h3>City Lights</h3>
+                        <p>City</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- Image 4 -->
+            <div class="gallery-item" data-category="nature">
+
+                <button class="image-card" data-index="3">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Green forest">
+
+                    <div class="caption">
+                        <h3>Forest Walk</h3>
+                        <p>Nature</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- Image 5 -->
+            <div class="gallery-item" data-category="travel">
+
+                <button class="image-card" data-index="4">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+                        alt="Mountain road">
+
+                    <div class="caption">
+                        <h3>Road Trip</h3>
+                        <p>Travel</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- Image 6 -->
+            <div class="gallery-item" data-category="city">
+
+                <button class="image-card" data-index="5">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=85"
+                        alt="Downtown city">
+
+                    <div class="caption">
+                        <h3>Downtown</h3>
+                        <p>City</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="closeBtn">
+            &times;
+        </button>
+
+        <button class="previous" id="prevBtn">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="">
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxCategory"></p>
+
+        </div>
+
+        <button class="next" id="nextBtn">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <footer>
+        <p>CodeAlpha Frontend Development Internship</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
